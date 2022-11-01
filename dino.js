@@ -45,7 +45,8 @@ import {
   
     if (currentFrameTime >= FRAME_TIME) {
       dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
-      dinoElem.src = `2-${dinoFrame}.png`
+      //dinoElem.src = `2-${dinoFrame}.png`
+      dinoElem.src = `https://raw.githubusercontent.com/Spygeneration/far-from-obstacal/master/2-${dinoFrame}.png`
       currentFrameTime -= FRAME_TIME
     }
     currentFrameTime += delta * speedScale
